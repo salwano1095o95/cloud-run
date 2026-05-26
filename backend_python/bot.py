@@ -3,6 +3,7 @@ import logging
 import httpx
 import json
 import uuid
+import time
 from typing import Dict, Any, Optional, Tuple
 
 try:
@@ -174,8 +175,6 @@ class TelegramBot:
         # Start Async Pipeline execution
         await self._edit_text(chat_id, msg_id, f"📥 **جاري تحميل الفيديو...**\n📌 {title}\n⚙️ الجودة المفضلة: {quality.upper()}")
         
-        start_time = httpx.Client().now if hasattr(httpx.Client(), 'now') else 0
-        import time
         t_start = time.time()
 
         # Update user's last request time in database before starting download

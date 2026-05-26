@@ -176,7 +176,7 @@ class DownloadEngine:
         if not canonical_path.startswith(canonical_dir):
             logger.error(f"Security Warning: Attempted path traversal deletion for file {filepath}")
             return
-
+        
         try:
             if os.path.exists(canonical_path):
                 os.remove(canonical_path)
