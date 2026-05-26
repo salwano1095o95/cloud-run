@@ -1,0 +1,6 @@
+{
+  "name": "Telegram Video Downloader Platform",
+  "description": "Production-grade Telegram Video Downloader platform featuring an interactive admin dashboard, active rate limiting, structured logging, and system health checks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
